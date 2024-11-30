@@ -1,0 +1,128 @@
+/* primary font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* miama font */
+@font-face {
+    font-family: 'Miama';
+    src: url('../fonts/miama/miama.ttf') format('truetype'),
+         url('../fonts/miama/miama.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @import url('https://fonts.cdnfonts.com/css/miama');
+
+.miama-regular{
+    font-family: "Miama", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} */
+                
+/* set max width in body */
+main{
+    max-width: 1440px;
+    margin: 0 auto; 
+}
+
+/* using the same class in some tags */
+.display-flex{
+    display: flex;
+}
+/* relevant colors */
+.color-static-one{
+    color: #E6533C;
+}
+.color-static-two{
+    color: #ffffff;
+}
+
+/* header and navbar */
+header{
+    /* background: url(/images/Images\ 2.png); */
+    /* width: 1440px; */
+    height: 715px;
+    background-color: #111111;
+}
+nav{
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 110px;
+}
+
+nav ul{
+    padding: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 46px;
+    /* opacity: 10%; */
+}
+
+header h3{
+    font-style: italic;
+    color: #E6533C;
+    font-size: 36px;
+    font-weight: 800;
+    margin-left: 180px;
+}
+
+ul>li{
+    display: flex;
+    align-items: center;
+}
+.nav-list{
+    list-style: none;
+    margin-right: 47px;
+}
+.list-link{
+    text-decoration: none;
+    font-size: 1.12rem;
+}
+#list-unique{
+    padding: 8px 20px;
+    font-size: 1.12rem;
+    font-weight:600;
+    background-color: #E6533C;
+    border-radius: 25px;
+}
+
+/* banner stylings */
+.bnr{
+    display: flex;
+    padding-left: 180px;
+    gap: 167px;
+}
+.bnr-insider{
+    width: 520px;
+    height: 440px;
+}
+.bnr-title{
+    font-size: 4.87rem;
+    font-weight: 900;
+}
+/* buttons are put in a div to maintain gap */
+.btn-container{
+    display: flex;
+    gap: 14px;
+}
+.bnr-btn-one, .bnr-btn-two{
+    padding: 16px 46px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 43px;
+    /* gap: 14px; */
+}
+.bnr-btn-one{
+    background-color: #E6533C;
+}
+.bnr-btn-two{
+    background: transparent;
+    border: 1px solid #ffffff;
+}
