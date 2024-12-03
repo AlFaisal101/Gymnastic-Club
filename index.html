@@ -10,6 +10,12 @@
     <header>
         <nav class="display-flex">
             <h3>PowerUp</h3>
+            <div class="menu-icon display-flex">
+                <!-- Hamburger menu -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="ul-holder">
                 <ul class="list-items display-flex">  
                     <li id="list-unique" class="nav-list"><a href="" class="list-link color-static-two">Home</a></li>
@@ -39,5 +45,16 @@
     <footer>
 
     </footer>
+    
+<!-- js -->
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const ulHolder = document.querySelector('.ul-holder');
+    
+        menuIcon.addEventListener('click', () => {
+            ulHolder.classList.toggle('show'); // Add/Remove "show" class
+        });
+    </script>
+    
 </body>
 </html>

@@ -127,4 +127,47 @@ ul>li{
     border: 1px solid #ffffff;
 }
 
+/* Menu Icon Styles */
+.menu-icon {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+/* Mobile View Styles */
+@media (max-width: 576px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .ul-holder {
+        display: none; /* Hide nav items initially */
+        flex-direction: column; /* Stack vertically */
+        position: absolute;
+        top: 60px; /* Below the navbar */
+        right: 0;
+        background-color: #111111;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .menu-icon {
+        display: flex; /* Show hamburger menu */
+    }
+
+    .ul-holder.show {
+        display: flex; /* Show nav items when toggled */
+    }
+}
+
 
