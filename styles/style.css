@@ -1,4 +1,4 @@
-/* primary font */
+/* primary font, Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .inter-regular {
@@ -11,20 +11,18 @@
 /* miama font */
 @font-face {
     font-family: 'Miama';
-    src: url('../fonts/miama/miama.ttf') format('truetype'),
-         url('../fonts/miama/miama.otf') format('opentype');
+    src: url('../font/Miama.ttf') format('truetype'),
+         url('../font/Miama.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
-
-/* @import url('https://fonts.cdnfonts.com/css/miama');
 
 .miama-regular{
     font-family: "Miama", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-} */
+}
                 
 /* set max width in body */
 main{
@@ -46,8 +44,6 @@ main{
 
 /* header and navbar */
 header{
-    /* background: url(/images/Images\ 2.png); */
-    /* width: 1440px; */
     height: 715px;
     background-color: #111111;
 }
@@ -56,14 +52,11 @@ nav{
     align-items: center;
     margin-right: 110px;
 }
-
 nav ul{
     padding: 4px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 46px;
-    /* opacity: 10%; */
 }
-
 header h3{
     font-style: italic;
     color: #E6533C;
@@ -71,7 +64,6 @@ header h3{
     font-weight: 800;
     margin-left: 180px;
 }
-
 ul>li{
     display: flex;
     align-items: center;
@@ -105,6 +97,14 @@ ul>li{
 .bnr-title{
     font-size: 4.87rem;
     font-weight: 900;
+    line-height: 1;
+    margin: 0; 
+    vertical-align: baseline;
+}
+.miama-regular{
+    font-size: inherit;
+    line-height: inherit; 
+    vertical-align: inherit;
 }
 /* buttons are put in a div to maintain gap */
 .btn-container{
@@ -126,3 +126,5 @@ ul>li{
     background: transparent;
     border: 1px solid #ffffff;
 }
+
+
